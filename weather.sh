@@ -32,5 +32,5 @@ temp=$(curl -s wttr.in/$1?format=j1 | jq -r '.current_condition[0].temp_C')
 humidity=$(curl -s wttr.in/$1?format=j1 | jq -r '.current_condition[0].humidity')
 
 echo 'Weather in '$1
-echo 'Temperature '$temp'C'
+echo 'Temperature '$temp'°C'
 echo 'Humidity '$humidity'%'
